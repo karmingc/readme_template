@@ -59,7 +59,7 @@ This section includes intructions to deploy on [staging](#staging) and [producti
 
 ## Troubleshoot
 
-If you encounter to any issue excluded from the ones below, please drop us a message on our [Slack Channel](https://www.example.com)
+If you encounter any issue excluded from the ones below, please drop us a message on our [Slack Channel](https://www.example.com)
 
 **Q**: ...
 
