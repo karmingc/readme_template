@@ -6,10 +6,10 @@ Here's a one or two line description that provides helpful context about this pr
 
 ## Table of Contents
 
--   [Setup](#setup)
--   [Contributing](#contributing)
--   [Deployment](#deployment)
--   [Advanced Guides](#advanced-guides)
+- [Setup](#setup)
+- [Contributing](#contributing)
+- [Deployment](#deployment)
+- [Advanced Guides](#advanced-guides)
 
 ## Setup
 
