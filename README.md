@@ -7,62 +7,66 @@ Here's a one or two line description that provides helpful context about this pr
 ## Table of Contents
 
 -   [Setup](#setup)
--   [Testing](#setup)
+-   [Contributing](#contributing)
 -   [Deployment](#deployment)
--   [Troubleshoot](#troubleshoot)
--   [Additional Resources](#additional-resources)
+-   [Advanced Guides](#advanced-guides)
 
 ## Setup
 
-There are two ways to setup your environment...
-- [With Docker](#with-docker)
-- [With your own machine](#with-your-own-machine)
+If you're just cloning the app, the following sections will help you get setup. If you've already run the app before, then you can probably skip ahead to the section about [running locally](#running-locally).
 
-### General Prerequisites
+### OS Dependencies
 
-#### Package Managers
+#### Required
 
-`asdf`/`rbenv`, `ruby`, and `homebrew`...
+* `homebrew` in order to install other OS level dependencies.
+* `node` version 16 must be installed to run this project.
+* `yarn` is the JavaScript package we use in this project.
+  
+#### Optional
 
-#### Environment Variables
+* `n` or `nvm` can be helpful in order to be able to easily change node versions. 
 
-Ask ... for `env.local`...
+### Environment Variables
 
-### With Docker
+We've provided a sample environment variable file that you will want to copy from `.env.sample` to `.env`. Ask a teammate to help you get this set up.
 
-### With Your Own Machine
+### Running Locally
 
-## Testing
+> Guidance - focus this section on whatever is the happiest path for getting the project running locally. In many cases that is against a staging environment. Unless it's necessary to have here, save more detailed instructions for how to run against local instances of other services for the [advanced guides](#advanced-guides) section.
 
-- `render()` comes from [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- `it()` and `expect()` come from [Jest](https://jestjs.io/)
-- `<MockedProvider />` comes from [Apollo](https://www.apollographql.com/docs/react/development-testing/testing/#mockedprovider)
-- For select inputs, we use [React Select](https://react-select.com/home), with [react-select-event](https://testing-library.com/docs/ecosystem-react-select-event)
+The easiest way to run our application is against the `preview` staging environment, which can be done with the following command.
 
+```shell
+yarn start preview
 ```
-# Run tests
 
-# Jest tips
+See the [Advanced Guides] for more information about other helpful development tools and how to run this against project non-staging services.
 
-```
+## Contributing
+
+> Guidance - use this section to explain or link to more detailed explanations of the expectations for contributing to your repo. Let any newcomers know about important code style or best practices that you follow. For example, a link to a testing guide would be appropriate here.
+
+The following guides will be helpful to anyone who wants to contribute to our app. Please read through the following links before opening your first PR.
+
+* Read our [testing guide](./guides/testing.md) to understand how we write tests.
+* See the [organization guide](./guides/organization.md) to learn your way around the structure of our repo.
+* The [internationalization guide](./guides/internationalization.md) explains how we internationalize text string using `i18n-next`.
 
 ## Deployment
 
-This section includes intructions to deploy on [staging](#staging) and [production](#production) environment
+> Guidance - add a description of the deployment process or link to a release guide here. Be sure to include instructions for deploying to any important environments. For example, include sections for `preview` and `production` if they differ.
+
+This section includes instructions to deploy on [staging](#staging) and [production](#production) environment.
 
 ### Staging
+
 ### Production
 
-## Troubleshoot
+## Advanced Guides
 
-If you encounter any issue excluded from the ones below, please drop us a message on our [Slack Channel](https://www.example.com)
+Here are some additional guides that you may or may not find helpful as you work in this repo.
 
-**Q**: ...
-
-_A_: ...
-
-## Additional Resources
-
-In order to contribute to this project, you might need to familiarize yourself with certain of these libraries or frameworks
-- [React](https://reactjs.org/)
-- [Cypress](https://www.cypress.io/)
+* Running against a local `flatbook`
+* API documentation
+* Storybooks
